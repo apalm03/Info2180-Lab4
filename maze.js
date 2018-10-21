@@ -81,4 +81,22 @@ window.onload = function (){
 		};
 		
 	//=============================================================================================	
+	//Exercise 6
+	//code to increase difficulty and avoid cheating 
+	
+	s= document.getElementById("start");
+	s.onmouseleave = function(){
+		maze.onmouseleave =function(){
+			for(var j = 0; j < boundaries.length; j++){
+				document.getElementById("status").textContent = "You lose!"
+				for(var j = 0; j < boundaries.length; j++){
+					if( boundaries[j].className.indexOf("example") == -1){
+						boundaries[j].className = "boundary youlose";
+					}
+				}
+			}
+		};
+	
+}
+
 };
