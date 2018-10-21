@@ -22,4 +22,17 @@ window.onload = function (){
 	
 	//==============================================================================
 
+	//Exercise 2
+	/*Code to turn all boundaries red when the mouse hovers over any boundary indicating 
+	you lose.*/ 
+	
+	function youLose(){
+	hitwall = true;
+	document.getElementById("status").textContent = "You lose!"
+	var boundaries = document.querySelectorAll(".boundary");
+	for(var j = 0; j < boundaries.length; j++){
+	boundaries[j].className = "boundary youlose";
+					}
+				}
+	
 };
