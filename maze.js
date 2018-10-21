@@ -40,11 +40,11 @@ window.onload = function (){
 		/*event handle code to show pop-up note "you win" when mouse touches ending div 
 	without touching the boundary walls*/
 	
-	function youWin(){
+	/*function youWin(){
 		if (document.getElementsByClassName("boundary youlose").length == 0){
 			alert("You Win!");
 		}
-	} 
+	} */
 	
 	//==============================================================================
 	
@@ -67,4 +67,18 @@ window.onload = function (){
 	};
 	
 	//============================================================================================
+	//Exercise 5
+	/*code updates status as "you win" if user reaches ending div without touching the walls. 
+	Else updates status "you lose".*/
+	
+			function playerStatus(){
+			if(document.querySelectorAll(".youlose").length == 0){
+			status.innerHTML = "You win!";
+			}
+			else{
+				status.innerHTML = "You Lose!";
+			}
+		};
+		
+	//=============================================================================================	
 };
