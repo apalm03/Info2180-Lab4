@@ -48,5 +48,23 @@ window.onload = function (){
 	
 	//==============================================================================
 	
+	//Exercise 4
+	// code to reset maze by clicking the starting div
 	
+	function restart() {
+    hitwall = false;
+    if (boundaries.length != 0){
+			for(var j = 0; j < boundaries.length; j++){
+				if(boundaries[j].className == "boundary example"){
+					continue;
+				}
+				boundaries[j].className = "boundary";
+			}
+
+			status.innerHTML = "Move your mouse over the \"S\" to begin.";
+			
+		}
+	};
+	
+	//============================================================================================
 };
