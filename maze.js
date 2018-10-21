@@ -34,5 +34,19 @@ window.onload = function (){
 	boundaries[j].className = "boundary youlose";
 					}
 				}
+	//==============================================================================
+	
+	//Exercise 3
+		/*event handle code to show pop-up note "you win" when mouse touches ending div 
+	without touching the boundary walls*/
+	
+	function youWin(){
+		if (document.getElementsByClassName("boundary youlose").length == 0){
+			alert("You Win!");
+		}
+	} 
+	
+	//==============================================================================
+	
 	
 };
